@@ -1,24 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GCD_Bai_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmS-bI-9Tk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5zi-Ky-2EV">
+                                        <rect key="frame" x="16" y="10" width="382" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyz-UL-eDo">
+                                                <rect key="frame" x="0.0" y="0.0" width="124" height="40"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                <state key="normal" title="DownLoad normal"/>
+                                                <connections>
+                                                    <action selector="normalDownloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I0H-Ng-qhT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcy-IZ-yRV">
+                                                <rect key="frame" x="129" y="0.0" width="124" height="40"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                <state key="normal" title="DispatchGroup"/>
+                                                <connections>
+                                                    <action selector="dispatchGroupAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ine-6d-hg7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiq-DY-9xC">
+                                                <rect key="frame" x="258" y="0.0" width="124" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Semaphore"/>
+                                                <connections>
+                                                    <action selector="semaphoreAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ucw-2I-BXs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5zi-Ky-2EV" firstAttribute="top" secondItem="xmS-bI-9Tk" secondAttribute="top" constant="10" id="BzB-CJ-oD8"/>
+                                    <constraint firstItem="5zi-Ky-2EV" firstAttribute="centerY" secondItem="xmS-bI-9Tk" secondAttribute="centerY" id="cLs-Bx-OcB"/>
+                                    <constraint firstItem="5zi-Ky-2EV" firstAttribute="leading" secondItem="xmS-bI-9Tk" secondAttribute="leading" constant="16" id="fNX-D9-7z1"/>
+                                    <constraint firstItem="5zi-Ky-2EV" firstAttribute="centerX" secondItem="xmS-bI-9Tk" secondAttribute="centerX" id="qH6-I1-1Oa"/>
+                                    <constraint firstAttribute="height" constant="60" id="zHA-OB-Hpo"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mqs-6G-bMc">
+                                <rect key="frame" x="0.0" y="104" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7z-kK-ucW">
+                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="f72-Vn-3LQ"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iv9-cy-gQP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s7z-kK-ucW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="64k-GJ-h2v"/>
+                            <constraint firstItem="s7z-kK-ucW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8KR-tH-u7A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s7z-kK-ucW" secondAttribute="bottom" id="KFZ-6W-Ith"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xmS-bI-9Tk" secondAttribute="trailing" id="MVu-H6-7a3"/>
+                            <constraint firstItem="s7z-kK-ucW" firstAttribute="top" secondItem="mqs-6G-bMc" secondAttribute="bottom" id="ePm-k3-Ryy"/>
+                            <constraint firstItem="xmS-bI-9Tk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fRs-AJ-4fm"/>
+                            <constraint firstItem="mqs-6G-bMc" firstAttribute="top" secondItem="xmS-bI-9Tk" secondAttribute="bottom" id="gh8-PB-CWp"/>
+                            <constraint firstItem="xmS-bI-9Tk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mCI-nC-Ohq"/>
+                            <constraint firstItem="mqs-6G-bMc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nXu-o3-5xl"/>
+                            <constraint firstItem="mqs-6G-bMc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rhE-rf-qFY"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qmd-GI-sRs">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="aus-hk-hMn">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kck-Ta-eVu">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="s7z-kK-ucW" id="kHX-96-PwV"/>
+                        <outlet property="tableview" destination="mqs-6G-bMc" id="hOc-Bc-bAE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="64.955357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1818E14625B606690061C085 /* AlbumTableViewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818E14425B606690061C085 /* AlbumTableViewcell.swift */; };
+		1818E14725B606690061C085 /* AlbumTableViewcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1818E14525B606690061C085 /* AlbumTableViewcell.xib */; };
 		185D2C9725B5F28600C9DB8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D2C9625B5F28600C9DB8C /* AppDelegate.swift */; };
 		185D2C9925B5F28600C9DB8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D2C9825B5F28600C9DB8C /* SceneDelegate.swift */; };
 		185D2C9B25B5F28600C9DB8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D2C9A25B5F28600C9DB8C /* ViewController.swift */; };
 		185D2C9E25B5F28600C9DB8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185D2C9C25B5F28600C9DB8C /* Main.storyboard */; };
 		185D2CA025B5F28700C9DB8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185D2C9F25B5F28700C9DB8C /* Assets.xcassets */; };
 		185D2CA325B5F28700C9DB8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185D2CA125B5F28700C9DB8C /* LaunchScreen.storyboard */; };
+		185D2CAB25B5F30900C9DB8C /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D2CAA25B5F30900C9DB8C /* AlbumModel.swift */; };
+		ED6EB2B75D269F0246A6B6CB /* Pods_GCD_Bai_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A82C083544993B62197DA6 /* Pods_GCD_Bai_2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1818E14425B606690061C085 /* AlbumTableViewcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewcell.swift; sourceTree = "<group>"; };
+		1818E14525B606690061C085 /* AlbumTableViewcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTableViewcell.xib; sourceTree = "<group>"; };
 		185D2C9325B5F28600C9DB8C /* GCD_Bai_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCD_Bai_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185D2C9625B5F28600C9DB8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		185D2C9825B5F28600C9DB8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		185D2C9F25B5F28700C9DB8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185D2CA225B5F28700C9DB8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		185D2CA425B5F28700C9DB8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185D2CAA25B5F30900C9DB8C /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		5849205B9474BBDE8ABD4A72 /* Pods-GCD_Bai_2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCD_Bai_2.release.xcconfig"; path = "Target Support Files/Pods-GCD_Bai_2/Pods-GCD_Bai_2.release.xcconfig"; sourceTree = "<group>"; };
+		5C9167673B151705DF41E5F7 /* Pods-GCD_Bai_2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCD_Bai_2.debug.xcconfig"; path = "Target Support Files/Pods-GCD_Bai_2/Pods-GCD_Bai_2.debug.xcconfig"; sourceTree = "<group>"; };
+		B9A82C083544993B62197DA6 /* Pods_GCD_Bai_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCD_Bai_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6EB2B75D269F0246A6B6CB /* Pods_GCD_Bai_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				185D2C9525B5F28600C9DB8C /* GCD_Bai_2 */,
 				185D2C9425B5F28600C9DB8C /* Products */,
+				FCC6BB3D18D849D2A02C64AE /* Pods */,
+				A7382CD818667A2188EBF999 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +76,28 @@
 				185D2C9F25B5F28700C9DB8C /* Assets.xcassets */,
 				185D2CA125B5F28700C9DB8C /* LaunchScreen.storyboard */,
 				185D2CA425B5F28700C9DB8C /* Info.plist */,
+				185D2CAA25B5F30900C9DB8C /* AlbumModel.swift */,
+				1818E14425B606690061C085 /* AlbumTableViewcell.swift */,
+				1818E14525B606690061C085 /* AlbumTableViewcell.xib */,
 			);
 			path = GCD_Bai_2;
+			sourceTree = "<group>";
+		};
+		A7382CD818667A2188EBF999 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9A82C083544993B62197DA6 /* Pods_GCD_Bai_2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCC6BB3D18D849D2A02C64AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C9167673B151705DF41E5F7 /* Pods-GCD_Bai_2.debug.xcconfig */,
+				5849205B9474BBDE8ABD4A72 /* Pods-GCD_Bai_2.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 185D2CA725B5F28700C9DB8C /* Build configuration list for PBXNativeTarget "GCD_Bai_2" */;
 			buildPhases = (
+				E13D67ABB4A93FF01C244C14 /* [CP] Check Pods Manifest.lock */,
 				185D2C8F25B5F28600C9DB8C /* Sources */,
 				185D2C9025B5F28600C9DB8C /* Frameworks */,
 				185D2C9125B5F28600C9DB8C /* Resources */,
+				4E226A1CBC29A1D67252129E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +163,53 @@
 				185D2CA325B5F28700C9DB8C /* LaunchScreen.storyboard in Resources */,
 				185D2CA025B5F28700C9DB8C /* Assets.xcassets in Resources */,
 				185D2C9E25B5F28600C9DB8C /* Main.storyboard in Resources */,
+				1818E14725B606690061C085 /* AlbumTableViewcell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E226A1CBC29A1D67252129E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GCD_Bai_2/Pods-GCD_Bai_2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GCD_Bai_2/Pods-GCD_Bai_2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GCD_Bai_2/Pods-GCD_Bai_2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E13D67ABB4A93FF01C244C14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GCD_Bai_2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		185D2C8F25B5F28600C9DB8C /* Sources */ = {
@@ -139,6 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				185D2C9B25B5F28600C9DB8C /* ViewController.swift in Sources */,
+				1818E14625B606690061C085 /* AlbumTableViewcell.swift in Sources */,
+				185D2CAB25B5F30900C9DB8C /* AlbumModel.swift in Sources */,
 				185D2C9725B5F28600C9DB8C /* AppDelegate.swift in Sources */,
 				185D2C9925B5F28600C9DB8C /* SceneDelegate.swift in Sources */,
 			);
@@ -282,8 +362,10 @@
 		};
 		185D2CA825B5F28700C9DB8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C9167673B151705DF41E5F7 /* Pods-GCD_Bai_2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GCD_Bai_2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,8 +381,10 @@
 		};
 		185D2CA925B5F28700C9DB8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5849205B9474BBDE8ABD4A72 /* Pods-GCD_Bai_2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GCD_Bai_2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
