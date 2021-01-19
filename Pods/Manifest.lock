@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.0)
+  - ObjectMapper (3.5.3)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - ObjectMapper (~> 3.5)
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ObjectMapper
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 0fed4ae67ecf176c61a7431dfc1bd42dc7283985
+
+COCOAPODS: 1.8.4
